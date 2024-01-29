@@ -1,0 +1,84 @@
+.header
+    position: fixed
+    top: 31px
+    left: 50%
+    transform: translateX(-50%)
+    width: 100%
+    max-width: 1400px
+    margin-inline: auto
+    background-color: $color-white
+    border-radius: 500px
+    transition: all .3s ease-in-out
+    z-index: 100
+
+    &__box
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 20px
+
+        nav
+            display: flex
+            gap: 20px
+            
+            a
+                font-weight: 400
+                color: #474040
+
+        .halal
+            width: 40px
+            height: 40px
+            object-fit: contain
+
+
+    .logo
+        width: fit-content
+        height: fit-content
+        user-select: none
+        cursor: pointer
+
+    &__connection
+        display: flex
+        align-items: center
+        gap: 20px
+
+        a
+            font-weight: 700
+            background-color: $-color-green-light
+            border-radius: 50px
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 10px
+          
+
+            &.for-modal
+                width: 40px
+                height: 40px
+               
+
+
+            svg
+                width: 20px
+                height: 20px
+
+    &__cart
+        position: relative
+        a
+            background-color: $-color-green-light
+            border-radius: 50px
+            width: 40px
+            height: 40px
+            display: flex
+            align-items: center
+            justify-content: center
+
+        span
+            position: absolute
+            top: -10px
+            right: -3px
+            color: #00B107
+            font-weight: 500
+            line-height: 16px
+
+@media all and (max-width: 1180)
