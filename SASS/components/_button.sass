@@ -2,15 +2,56 @@
     &:link, &:visited
         position: relative
         background-color: $color-yellow
-        padding: .2rem .2rem
-        border-radius: 10rem
-        transition: all .4s
+        padding: 25px 55px
+        border-radius: 95px
+        transition: all .4s ease-in-out
         width: fit-content
+        display: block
+        font-size: 20px
+        font-style: normal
+        font-weight: 800
+        line-height: 32px
+        color: #FFF
     &:hover
-        gap: 3.4rem
+        transform: scale(1.05)
 
     &:active
-        gap: 2.4rem
-        transform: translateX(1rem)
+        transform: scale(1.02)
+
+    &__big
+        &:link, &:visited
+            padding: 41.5px 166px
+            font-size: 24px
+            font-style: normal
+            font-weight: 700
+            line-height: 24px
+        &:hover
+            transform: scale(1.05)
+
+    &__submit
+        position: relative
+        background-color: $color-yellow
+        padding: 24px
+        border-radius: 10px
+        transition: all .4s ease-in-out
+        width: 100%
+        display: block
+        font-size: 16px
+        font-weight: 700
+        line-height: 16px
+        color: #FFF
+        text-transform: uppercase
+        display: block
+        cursor: pointer
+
+        &:hover
+            transform: scale(1.02)
+            box-shadow: 0 0 10px 10px rgba(170, 255, 0, 0.551)
+
+        &:active
+            transform: scale(1)
+            box-shadow: 0 0 12px 12px rgba(170, 255, 0, 0.551)
+
+        
 
     

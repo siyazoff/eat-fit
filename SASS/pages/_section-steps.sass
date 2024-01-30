@@ -1,0 +1,48 @@
+.section-steps
+    padding: 60px 0 60px
+    position: relative
+    background: $color-white
+    display: block
+
+    &__box
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 141px
+        width: 100%
+        height: 100%
+        margin-top: 50px
+        position: relative
+
+        hr
+            position: absolute
+            z-index: 0
+            top: 24px
+            right: 0
+            width: 98%
+            height: 2px
+            background:#DCDFE8
+
+        .item
+            display: flex
+            flex-direction: column
+            gap: 50px
+            max-width: 218px
+
+            p
+                color: #474040
+                font-size: 20px
+                font-weight: 300
+                line-height: 28px
+            svg
+                position: relative
+                z-index: 1
+                circle
+                    transition: all .2s ease-in-out
+            
+            &:hover
+                svg
+                    circle
+                        fill: $-color-green-light
+
+
+

@@ -1,0 +1,202 @@
+.section-programms
+    display: block
+    position: relative
+    background: $color-white
+    padding: 60px 0
+
+    &__box
+        margin-top: 50px
+
+    
+
+    .woman__card
+        display: flex
+        justify-content: space-between
+        border-radius: 20px
+        background: #F8FAF7
+        position: relative
+        padding-bottom: 70px
+        padding-right: 38px
+
+        .left
+            display: flex
+            flex-direction: column
+            gap: 70px
+            max-width: 570px
+            .icon
+                display: flex
+                flex-direction: column
+                align-items: center
+                background: $color-green
+                border-radius: 20px
+                padding: 23px 37px 35px 37px 
+                gap: 37px
+
+                svg
+                    width: 80px
+                    height: 80px
+
+                h3
+                    font-size: 24px
+                    line-height: 24px
+                    color: #FFF
+                    font-weight: 600
+
+        .wrapper-icon-tabs
+            display: flex
+
+            .tabby-tabs
+                display: flex
+                flex-direction: column
+                gap: 25px
+                margin-top: 70px
+                margin-left: 30px
+
+                h4
+                    line-height: 20px
+                    font-weight: 600
+                    font-size: 20px
+                    color: #474040
+
+                ul
+                    display: flex
+                    gap: 10px
+                    border: none
+
+                    a
+                        padding: 20px 30px
+                        border-radius: 25px
+                        border: 1px solid #A8A8A8
+                        font-size: 16px
+                        font-weight: 600
+                        line-height: 8px
+                        margin: 0
+                        background: transparent
+                        transition: all .4s ease-in-out
+                        color: #474040
+
+                        &[role=tab][aria-selected=true]
+                            background: $color-green
+                            border: 1px solid $color-green
+                            color: $color-white
+
+        .wrapper-weight
+            padding-left: 30px
+            h4       
+                color: #474040
+                font-size: 16px
+                font-style: normal
+                font-weight: 400
+                line-height: 16px
+                margin-bottom: 25px
+            h3
+                color: #474040
+                font-size: 30px
+                font-style: normal
+                font-weight: 700
+                line-height: 30px
+
+        .wrapper-cost
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            column-gap: 90px
+            row-gap: 25px
+
+            h4
+                margin: 0
+
+        .wrapper-btns
+            display: flex
+            gap: 20px
+            padding-left: 30px
+            margin-top: 10px
+
+            a
+                padding: 25px 55px
+                font-size: 20px
+                font-weight: 800
+                line-height: 20px
+                color: #FFF
+                text-transform: uppercase
+
+                &:first-child
+                    background: $color-green
+
+        .right
+            width: 100%
+            max-width: 680px
+            padding-top: 70px
+            display: flex
+            justify-content: space-between
+
+            img
+                width: 100%
+                height: 560px
+                max-width: 454px
+                object-fit: cover
+                border-radius: 20px
+
+        .wrapper-info
+            max-width: 187px
+            width: 100%
+            padding-top: 61px
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+
+            .calculation
+                span
+                    color: #474040
+                    font-size: 16px
+                    line-height: 16px
+                    font-weight: 400
+                    margin-bottom: 25px
+                    display: inline-block
+                h4
+                    color: #474040
+                    font-size: 30px
+                    line-height: 25px
+                    font-weight: 600
+                    margin-bottom: 35px
+
+                    &.last-calc
+                        margin-bottom: 0
+
+    .man__card
+        background: #1D2029
+
+        .wrapper-icon-tabs
+            .tabby-tabs
+                h4
+                    color: $color-white
+
+                ul
+
+                    a
+                        border: 1px solid $color-white
+                        color: $color-white
+
+        .wrapper-weight
+            h4       
+                color: $color-white
+            h3
+                color: $color-white
+
+        .wrapper-info
+            p
+                color: $color-white
+
+            .calculation
+                span
+                    color: $color-white
+                h4
+                    color: $color-white
+
+
+
+
+
+
+
+    
