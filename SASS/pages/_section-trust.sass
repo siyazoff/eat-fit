@@ -1,0 +1,68 @@
+.section-trust
+    padding: 60px 0
+    background: $color-white
+
+    &__box
+        margin-top: 50px
+
+        .swiper-trust
+            height: 451px
+            width: 100%
+            overflow: hidden
+
+            .swiper-slide
+                height: 100%
+                width: 100%
+
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: contain
+
+        .swiper-trust-btns
+            display: flex
+            gap: 30px
+            margin-top: 50px
+
+            .swiper-trust-prev
+                transform: rotate(180deg)
+                margin-left: auto
+
+            .swiper-trust-prev
+                cursor: pointer
+                svg
+                    circle
+                        fill: $color-white
+                        stroke: #474040
+                        transition: all .3s ease-in-out
+
+                    path
+                        fill: #474040
+                        transition: all .3s ease-in-out
+
+                &:hover
+                    svg
+                        circle
+                            fill: $color-green
+                            stroke: $color-green
+                        path
+                            fill: $color-white
+            .swiper-trust-next
+                cursor: pointer
+                svg
+                    circle
+                        fill: $color-white
+                        stroke: #474040
+                        transition: all .3s ease-in-out
+
+                    path
+                        fill: #474040
+                        transition: all .3s ease-in-out
+
+                &:hover
+                    svg
+                        circle
+                            fill: $color-green
+                            stroke: $color-green
+                        path
+                            fill: $color-white

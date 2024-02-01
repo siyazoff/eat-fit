@@ -1,51 +1,62 @@
-const partnersSwiper = new Swiper(".partners-swiper", {
-  loop: true,
-  slidesPerView: 4.19,
-  spaceBetween: 24,
-  initialSlide: 2,
-  activeIndex: 2,
+const dietSwiper = new Swiper(".swiper-diet", {
+  loop: false,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  speed: 1200,
   grabCursor: true,
-  speed: 800,
 
-  // Navigation arrows
+  breakpoints: {
+    320: {
+      slidesPerView: 1.5,
+      spaceBetween: 15,
+      centeredSlides: true,
+      initialSlide: 1,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
+
+const trustSwiper = new Swiper(".swiper-trust", {
+  loop: false,
+  slidesPerView: 4,
+  spaceBetween: 30,
+  speed: 1200,
+  grabCursor: true,
   navigation: {
-    nextEl: ".partners-swiper-next",
-    prevEl: ".partners-swiper-prev",
+    prevEl: ".swiper-trust-prev",
+    nextEl: ".swiper-trust-next",
   },
 
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 20,
-      activeIndex: 0,
-      initialSlide: 0,
-
-      navigation: {
-        nextEl: ".partners-swiper-next-mobile",
-        prevEl: ".partners-swiper-prev-mobile",
-      },
+      spaceBetween: 8,
+    },
+    500: {
+      slidesPerView: 2,
     },
     768: {
-      slidesPerView: 4.19,
-      spaceBetween: 24,
+      slidesPerView: 4,
+      spaceBetween: 30,
     },
   },
 });
 
-const newsSwiper = new Swiper(".swiper-news", {
-  loop: true,
-  slidesPerView: 4,
-  spaceBetween: 24,
-  speed: 800,
-
-  breakpoints: {
-    320: {
-      slidesPerView: 1.2,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 4,
-      spaceBetween: 24,
-    },
+const homeSwiper = new Swiper(".swiper-home", {
+  loop: false,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  speed: 1200,
+  grabCursor: true,
+  autoplay: {
+    delay: 5500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    prevEl: ".swiper-home-prev",
+    nextEl: ".swiper-home-next",
   },
 });

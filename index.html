@@ -55,7 +55,7 @@
           <a href="\">Частые вопросы</a>
           <a href="\">Контакты</a>
         </nav>
-        <a href="\">
+        <a class="halal-link" href="\">
           <img class="halal" src="src/img/halal.webp" alt="halal" />
         </a>
         <div class="header__connection">
@@ -113,35 +113,219 @@
           </a>
           <span>2</span>
         </div>
+        <div class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="popup">
+        <nav>
+          <a href="\">О нас</a>
+          <a href="\">Программы</a>
+          <a href="\">Пример меню</a>
+          <a href="\">EatFitGo</a>
+          <a href="\">Детокс</a>
+          <a href="\">Отзывы</a>
+          <a href="\">Частые вопросы</a>
+          <a href="\">Контакты</a>
+        </nav>
+        <hr />
+        <div class="popup__bottom">
+          <div class="popup-cart">
+            <a href="\">
+              <span>2</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M10.6771 5.00016H9.32359C8.15802 5.00016 7.32259 5.00016 6.667 5.06906C6.16529 5.12179 5.7689 5.21488 5.41047 5.37919C4.68189 5.71319 4.0651 6.25023 3.63405 6.92593C3.14488 7.69273 3.00336 8.71172 2.7203 10.7497C2.35683 13.3667 2.17509 14.6753 2.57469 15.6916C2.92551 16.5837 3.57325 17.3277 4.4087 17.7979C5.36034 18.3335 6.68143 18.3335 9.32359 18.3335H10.6771C13.3192 18.3335 14.6403 18.3335 15.592 17.7979C16.4274 17.3277 17.0752 16.5837 17.426 15.6916C17.8256 14.6753 17.6438 13.3667 17.2804 10.7497C16.9973 8.71172 16.8558 7.69273 16.3666 6.92593C15.9356 6.25023 15.3188 5.71319 14.5902 5.37919C14.2318 5.21488 13.8354 5.12179 13.3337 5.06906C12.6781 5.00016 11.8426 5.00016 10.6771 5.00016Z"
+                  fill="white"
+                />
+                <path
+                  d="M13.3337 8.3335V5.06906M6.667 8.3335V5.06906M6.667 5.06906V4.16683C6.667 2.32588 8.15938 0.833496 10.0003 0.833496C11.8413 0.833496 13.3337 2.32588 13.3337 4.16683V5.06906M6.667 5.06906C7.32259 5.00016 8.15802 5.00016 9.32359 5.00016H10.6771C11.8426 5.00016 12.6781 5.00016 13.3337 5.06906M6.667 5.06906C6.16529 5.12179 5.7689 5.21488 5.41046 5.37919C4.68189 5.71319 4.0651 6.25023 3.63405 6.92593C3.14488 7.69273 3.00336 8.71172 2.7203 10.7497C2.35683 13.3667 2.17509 14.6753 2.57469 15.6916C2.92551 16.5837 3.57325 17.3277 4.4087 17.7979C5.36034 18.3335 6.68142 18.3335 9.32359 18.3335H10.6771C13.3192 18.3335 14.6403 18.3335 15.592 17.7979C16.4274 17.3277 17.0752 16.5837 17.426 15.6916C17.8256 14.6753 17.6438 13.3667 17.2804 10.7497C16.9973 8.71172 16.8558 7.69273 16.3666 6.92593C15.9356 6.25023 15.3188 5.71319 14.5902 5.37919C14.2318 5.21488 13.8354 5.12179 13.3337 5.06906"
+                  stroke="white"
+                  stroke-width="1.25"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <p>Корзина</p>
+            </a>
+          </div>
+          <div class="popup-halal">
+            <img src="src/img/halal.webp" alt="halal" />
+            <h3>HALAL</h3>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <section class="section-home" id="section-home">
         <div class="cont">
-          <div class="section-home__box">
-            <div class="left">
-              <h1>
-                <span>Eat&Fit</span>
-                <span>здоровое питание это легко</span>
-              </h1>
-              <div class="facts">
-                <div class="item">
-                  <img src="src/img/home_fact_1.svg" alt="EatFit" />
-                  <span>Сэкономим<br />ваше время</span>
-                </div>
-                <div class="item">
-                  <img src="src/img/home_fact_2.svg" alt="EatFit" />
-                  <span>Приведем<br />в форму</span>
-                </div>
-                <div class="item">
-                  <img src="src/img/home_fact_3.svg" alt="EatFit" />
-                  <span>Улучшим<br />здоровье</span>
+          <div class="swiper-home">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="section-home__box">
+                  <div class="left">
+                    <h1>
+                      <span>Eat&Fit</span>
+                      <span>здоровое питание это легко</span>
+                    </h1>
+                    <div class="facts">
+                      <div class="item">
+                        <img src="src/img/home_fact_1.svg" alt="EatFit" />
+                        <span>Сэкономим<br />ваше время</span>
+                      </div>
+                      <div class="item">
+                        <img src="src/img/home_fact_2.svg" alt="EatFit" />
+                        <span>Приведем<br />в форму</span>
+                      </div>
+                      <div class="item">
+                        <img src="src/img/home_fact_3.svg" alt="EatFit" />
+                        <span>Улучшим<br />здоровье</span>
+                      </div>
+                    </div>
+                    <a href="#" class="button button__big"
+                      >Попробовать за 9 990 тг</a
+                    >
+                  </div>
+                  <div class="right">
+                    <img src="src/img/home.webp" alt="eat and fit" />
+                  </div>
                 </div>
               </div>
-              <a href="#" class="button button__big">Попробовать за 9 990 тг</a>
+              <div class="swiper-slide">
+                <div class="section-home__box">
+                  <div class="left">
+                    <h1>
+                      <span>Eat&Fit</span>
+                      <span>здоровое питание это легко</span>
+                    </h1>
+                    <div class="facts">
+                      <div class="item">
+                        <img src="src/img/home_fact_1.svg" alt="EatFit" />
+                        <span>Сэкономим<br />ваше время</span>
+                      </div>
+                      <div class="item">
+                        <img src="src/img/home_fact_2.svg" alt="EatFit" />
+                        <span>Приведем<br />в форму</span>
+                      </div>
+                      <div class="item">
+                        <img src="src/img/home_fact_3.svg" alt="EatFit" />
+                        <span>Улучшим<br />здоровье</span>
+                      </div>
+                    </div>
+                    <a href="#" class="button button__big"
+                      >Попробовать за 9 990 тг</a
+                    >
+                  </div>
+                  <div class="right">
+                    <img src="src/img/home.webp" alt="eat and fit" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="section-home__box">
+                  <div class="left">
+                    <h1>
+                      <span>Eat&Fit</span>
+                      <span>здоровое питание это легко</span>
+                    </h1>
+                    <div class="facts">
+                      <div class="item">
+                        <img src="src/img/home_fact_1.svg" alt="EatFit" />
+                        <span>Сэкономим<br />ваше время</span>
+                      </div>
+                      <div class="item">
+                        <img src="src/img/home_fact_2.svg" alt="EatFit" />
+                        <span>Приведем<br />в форму</span>
+                      </div>
+                      <div class="item">
+                        <img src="src/img/home_fact_3.svg" alt="EatFit" />
+                        <span>Улучшим<br />здоровье</span>
+                      </div>
+                    </div>
+                    <a href="#" class="button button__big"
+                      >Попробовать за 9 990 тг</a
+                    >
+                  </div>
+                  <div class="right">
+                    <img src="src/img/home.webp" alt="eat and fit" />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="right">
-              <img src="src/img/home.webp" alt="eat and fit" />
+          </div>
+          <div class="swiper-home-btns">
+            <div class="swiper-home-prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="80"
+                viewBox="0 0 80 80"
+                fill="none"
+              >
+                <circle
+                  cx="40"
+                  cy="40"
+                  r="39.5"
+                  fill="#74AB31"
+                  stroke="#74AB31"
+                ></circle>
+                <g clip-path="url(#clip0_2001_82)">
+                  <path
+                    d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                    fill="white"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_2001_82">
+                    <rect
+                      width="20"
+                      height="20"
+                      fill="white"
+                      transform="translate(30 30.0001)"
+                    ></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="swiper-home-next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="80"
+                viewBox="0 0 80 80"
+                fill="none"
+              >
+                <circle
+                  cx="40"
+                  cy="40"
+                  r="39.5"
+                  fill="#74AB31"
+                  stroke="#74AB31"
+                ></circle>
+                <g clip-path="url(#clip0_2001_82)">
+                  <path
+                    d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                    fill="white"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_2001_82">
+                    <rect
+                      width="20"
+                      height="20"
+                      fill="white"
+                      transform="translate(30 30.0001)"
+                    ></rect>
+                  </clipPath>
+                </defs>
+              </svg>
             </div>
           </div>
         </div>
@@ -344,7 +528,7 @@
                     />
                     Высокий
                   </label>
-                  <p class="desc-goal"></p>
+                  <p class="desc-goal">* Выберите уровень активности</p>
                 </div>
                 <input
                   type="submit"
@@ -548,10 +732,61 @@
       </section>
       <section class="section-example-diet" id="section-example-diet">
         <div class="cont">
-          <h2 class="title-heading">пример рациона</h2>
+          <h2 class="title-heading">
+            пример рациона
+            <div class="country-change">
+              <span>Выбрать Страну</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+              >
+                <path
+                  d="M12.5 17.1875C12.3974 17.1876 12.2958 17.1674 12.201 17.1281C12.1062 17.0889 12.0202 17.0312 11.9477 16.9586L4.13521 9.14608C3.82993 8.84081 3.82993 8.34647 4.13521 8.04139C4.44048 7.73632 4.93481 7.73612 5.23989 8.04139L12.5 15.3015L19.7602 8.04139C20.0655 7.73612 20.5598 7.73612 20.8649 8.04139C21.17 8.34667 21.1702 8.841 20.8649 9.14608L13.0524 16.9586C12.9799 17.0312 12.8938 17.0889 12.7991 17.1281C12.7043 17.1674 12.6027 17.1876 12.5 17.1875Z"
+                  fill="#474040"
+                />
+              </svg>
+            </div>
+            <ul food-tabs>
+              <div class="food-tabs-wrapper">
+                <li><a href="#food-first">Япония</a></li>
+                <li><a href="#food-second">Швеция</a></li>
+                <li><a href="#food-third">Россия</a></li>
+              </div>
+            </ul>
+          </h2>
           <div class="section-example-diet__box">
-            <div class="swiper-diet">
+            <div class="swiper-diet" id="food-first">
               <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="item">
+                    <span>300 ккал</span>
+                    <img src="src/img/diet-1.webp" alt="eat and fit" />
+                    <h3>Завтрак</h3>
+                    <p>Сбалансированный рацион, для людей сбпасывающих вес</p>
+                    <a href="\" class="button">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <span>300 ккал</span>
+                    <img src="src/img/diet-2.webp" alt="eat and fit" />
+                    <h3>Обед</h3>
+                    <p>Сбалансированный рацион, для людей сбпасывающих вес</p>
+                    <a href="\" class="button">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <span>300 ккал</span>
+                    <img src="src/img/diet-3.webp" alt="eat and fit" />
+                    <h3>Ужин</h3>
+                    <p>Сбалансированный рацион, для людей сбпасывающих вес</p>
+                    <a href="\" class="button">Подробнее</a>
+                  </div>
+                </div>
                 <div class="swiper-slide">
                   <div class="item">
                     <span>300 ккал</span>
@@ -563,22 +798,1232 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-diet" id="food-second">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="item">
+                    <span>300 ккал</span>
+                    <img src="src/img/diet-1.webp" alt="eat and fit" />
+                    <h3>Обед</h3>
+                    <p>Сбалансированный рацион, для людей сбпасывающих вес</p>
+                    <a href="\" class="button">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <span>300 ккал</span>
+                    <img src="src/img/diet-1.webp" alt="eat and fit" />
+                    <h3>Завтрак</h3>
+                    <p>Сбалансированный рацион, для людей сбпасывающих вес</p>
+                    <a href="\" class="button">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <span>300 ккал</span>
+                    <img src="src/img/diet-2.webp" alt="eat and fit" />
+                    <h3>Обед</h3>
+                    <p>Сбалансированный рацион, для людей сбпасывающих вес</p>
+                    <a href="\" class="button">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <span>300 ккал</span>
+                    <img src="src/img/diet-3.webp" alt="eat and fit" />
+                    <h3>Ужин</h3>
+                    <p>Сбалансированный рацион, для людей сбпасывающих вес</p>
+                    <a href="\" class="button">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-diet" id="food-third">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="item">
+                    <span>300 ккал</span>
+                    <img src="src/img/diet-2.webp" alt="eat and fit" />
+                    <h3>Обед</h3>
+                    <p>Сбалансированный рацион, для людей сбпасывающих вес</p>
+                    <a href="\" class="button">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <span>300 ккал</span>
+                    <img src="src/img/diet-3.webp" alt="eat and fit" />
+                    <h3>Ужин</h3>
+                    <p>Сбалансированный рацион, для людей сбпасывающих вес</p>
+                    <a href="\" class="button">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <span>300 ккал</span>
+                    <img src="src/img/diet-1.webp" alt="eat and fit" />
+                    <h3>Обед</h3>
+                    <p>Сбалансированный рацион, для людей сбпасывающих вес</p>
+                    <a href="\" class="button">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <span>300 ккал</span>
+                    <img src="src/img/diet-1.webp" alt="eat and fit" />
+                    <h3>Завтрак</h3>
+                    <p>Сбалансированный рацион, для людей сбпасывающих вес</p>
+                    <a href="\" class="button">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-call" id="section-call">
+        <div class="cont">
+          <div class="section-call__box">
+            <div class="left">
+              <h2>
+                <span>Заполните форму</span> - и мы вам перезвоним
+                <span> в ближайшее время </span>
+              </h2>
+              <form>
+                <input type="text" placeholder="Город" />
+                <input type="text" placeholder="Ваше имя" />
+                <input type="tel" placeholder="Ваш телефон" />
+                <input type="tel" placeholder="Промокод (если есть)" />
+                <p>
+                  Нажимая на кнопку, я подтверждаю своё согласие на обработку
+                  персональных данных в соответствии с
+                  <a href="\">Политикиой конфиденциальности</a>
+                </p>
+                <button>
+                  Отправить
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="80"
+                    height="80"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                  >
+                    <circle
+                      cx="40"
+                      cy="40"
+                      r="39.5"
+                      fill="#74AB31"
+                      stroke="#74AB31"
+                    />
+                    <g clip-path="url(#clip0_2001_82)">
+                      <path
+                        d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2001_82">
+                        <rect
+                          width="20"
+                          height="20"
+                          fill="white"
+                          transform="translate(30 30.0001)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="right">
+              <img src="src/img/call-2.webp" alt="eat" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-trust">
+        <div class="cont">
+          <div class="title-heading">Нам доверяют заботу о своём питании</div>
+          <div class="section-trust__box">
+            <div class="swiper-trust">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="src/img/trust-1.webp" alt="eat" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/trust-2.webp" alt="eat" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/trust-3.webp" alt="eat" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/trust-4.webp" alt="eat" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/trust-1.webp" alt="eat" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/trust-2.webp" alt="eat" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/trust-3.webp" alt="eat" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/trust-4.webp" alt="eat" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-trust-btns">
+              <div class="swiper-trust-prev">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="80"
+                  height="80"
+                  viewBox="0 0 80 80"
+                  fill="none"
+                >
+                  <circle
+                    cx="40"
+                    cy="40"
+                    r="39.5"
+                    fill="#74AB31"
+                    stroke="#74AB31"
+                  ></circle>
+                  <g clip-path="url(#clip0_2001_82)">
+                    <path
+                      d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                      fill="white"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2001_82">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(30 30.0001)"
+                      ></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="swiper-trust-next">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="80"
+                  height="80"
+                  viewBox="0 0 80 80"
+                  fill="none"
+                >
+                  <circle
+                    cx="40"
+                    cy="40"
+                    r="39.5"
+                    fill="#74AB31"
+                    stroke="#74AB31"
+                  ></circle>
+                  <g clip-path="url(#clip0_2001_82)">
+                    <path
+                      d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                      fill="white"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2001_82">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(30 30.0001)"
+                      ></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-faq" id="section-faq">
+        <div class="cont">
+          <h2 class="title-heading">Частые вопросы</h2>
+          <div class="section-faq__box">
+            <ul faq-tabs>
+              <li><a data-tabby-default href="#faq-course">Курс</a></li>
+              <li><a href="#faq-food">Питание</a></li>
+              <li><a href="#faq-condition">Условия</a></li>
+              <li><a href="#faq-pay">Оплата</a></li>
+            </ul>
+            <div class="wrapper-faq">
+              <div class="wrapper-faq-tabs">
+                <div id="faq-course">
+                  <div class="faq">
+                    <h2>Как подобрать калорийность рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="faq">
+                    <h2>Как подобрать калорийность рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="faq">
+                    <h2>Как подобрать калорийность рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="faq">
+                    <h2>Как подобрать калорийность рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="faq">
+                    <h2>Как подобрать калорийность рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper-faq-tabs">
+                <div id="faq-food">
+                  <div class="faq">
+                    <h2>Как подобрать faq-food рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="faq">
+                    <h2>Как подобрать калорийность рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="faq">
+                    <h2>Как подобрать калорийность рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="faq">
+                    <h2>Как подобрать калорийность рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="faq">
+                    <h2>Как подобрать калорийность рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper-faq-tabs">
+                <div id="faq-condition">
+                  <div class="faq">
+                    <h2>Как подобрать faq-condition рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="faq">
+                    <h2>Как подобрать калорийность рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="faq">
+                    <h2>Как подобрать калорийность рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="faq">
+                    <h2>Как подобрать калорийность рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="faq">
+                    <h2>Как подобрать калорийность рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper-faq-tabs">
+                <div id="faq-pay">
+                  <div class="faq">
+                    <h2>Как подобрать faq-pay рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="faq">
+                    <h2>Как подобрать калорийность рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="faq">
+                    <h2>Как подобрать калорийность рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="faq">
+                    <h2>Как подобрать калорийность рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="faq">
+                    <h2>Как подобрать калорийность рациона?</h2>
+                    <p>
+                      Сервис Eat&Fit предлагает 21-дневный план перехода к
+                      здоровому питанию. В рамках 3.5 недель (без воскресений)
+                      мы готовим Вам рацион из 7-9 блюд на 5-6 приемов пищи
+                      общей калорийностью, заданной Вашими целями, комплекцией и
+                      образом жизни
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      fill="none"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="39.5"
+                        fill="#74AB31"
+                        stroke="#74AB31"
+                      ></circle>
+                      <g clip-path="url(#clip0_2001_82)">
+                        <path
+                          d="M45.7531 39.3657L35.4746 30.2451C35.1373 29.9184 34.5903 29.9184 34.253 30.2451C33.9157 30.5719 33.9157 31.102 34.253 31.4288L43.9118 40.0001L34.2538 48.5714C33.9165 48.8981 33.9165 49.4283 34.2538 49.755C34.5911 50.0817 35.1381 50.0817 35.4754 49.755L45.754 40.6344C45.9337 40.4602 46.0108 40.2293 45.9988 40.0009C46.01 39.7717 45.9329 39.5408 45.7531 39.3657Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2001_82">
+                          <rect
+                            width="20"
+                            height="20"
+                            fill="white"
+                            transform="translate(30 30.0001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-about" id="section-abouts">
+        <div class="cont">
+          <h2 class="title-heading">о нас</h2>
+          <div class="section-about__box">
+            <div class="left">
+              <img src="src/img/halal-cert.webp" alt="halal-cert" />
+            </div>
+            <div class="right">
+              <div class="item">
+                <h2>1000+</h2>
+                <h3>довольных клиентов</h3>
+                <p>Столько людей мы накормили за все время работы</p>
+              </div>
+              <div class="item">
+                <h2>300+</h2>
+                <h3>ежедневных доставок</h3>
+                <p>
+                  Более 20 пунктуальных курьеров ежедневно доставляют здоровое
+                  питание
+                </p>
+              </div>
+              <div class="item">
+                <h2>8+</h2>
+                <h3>лет на рынке</h3>
+                <p>Удерживаем лидерские позиции, и задаем темп рынку</p>
+              </div>
+              <div class="item">
+                <h2>4.8</h2>
+                <h3>рейтинг</h3>
+                <p>Согласно отзывам Google и 2GIS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-advantages" id="section-advantages">
+        <div class="cont">
+          <h2 class="title-heading">Наши преимущества</h2>
+          <div class="section-advantages__box">
+            <div class="item">
+              <img src="src/img/advantages-1.svg" alt="eat" />
+              <h3>
+                Создано<br />
+                профессионалами
+              </h3>
+            </div>
+            <div class="item">
+              <img src="src/img/advantages-2.svg" alt="eat" />
+              <h3>Передовые методы <br />приготовления</h3>
+            </div>
+            <div class="item">
+              <img src="src/img/advantages-3.svg" alt="eat" />
+              <h3>
+                Ночное <br />
+                производство
+              </h3>
+            </div>
+            <div class="item">
+              <img src="src/img/advantages-4.svg" alt="eat" />
+              <h3>
+                Сертифицированное<br />
+                производство
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-contacts" id="contacts">
+        <div class="cont">
+          <h2 class="title-heading">
+            Контакты <br />
+            <span>Пишите, звоните - мы на связи!</span>
+          </h2>
+          <div class="section-contacts__box">
+            <div class="left">
+              <img src="src/img/contacts.webp" alt="eat" />
+            </div>
+            <div class="right">
+              <div class="item">
+                <img src="src/img/contact-2gis.svg" alt="2gis" />
+                <h3>Адрес</h3>
+                <p>Нур-Султан, ул. Жансугурулы, 14/1а</p>
+              </div>
+              <div class="item">
+                <img src="src/img/contact-phone.svg" alt="eat" />
+                <h3>Телефон</h3>
+                <a href="tel:+7 (776) 690 60 90">+7 (776) 690 60 90</a>
+              </div>
+              <div class="item">
+                <img src="src/img/contact-mail.svg" alt="mail" />
+                <h3>Почта</h3>
+                <a href="mailto:eat.and.fit@mail.ru">eat.and.fit@mail.ru</a>
+              </div>
+              <div class="item">
+                <img src="src/img/contact-inst.svg" alt="inst" />
+                <h3>Instagram</h3>
+                <a href="https://www.instagram.com">eat.and.fit</a>
+              </div>
+              <div class="item">
+                <img src="src/img/contact-what.svg" alt="inst" />
+                <h3>Instagram</h3>
+                <a href="https://wa.me/+77766906090">+7 (776) 690 60 90</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
+    <footer class="footer" id="footer">
+      <h2>Публичная оферта</h2>
+      <h3>© Все права защищены. EAT&FIT, 2015-2023</h3>
+      <a href="https://factum.agency" noindex nofollow target="_blank"
+        >Сделано в FACTUM</a
+      >
+    </footer>
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/maskedinput.js"></script>
     <script src="js/custom-swiper.js"></script>
-    <script src="js/main.js"></script>
 
     <!-- cdn -->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12.0.0/dist/js/tabby.polyfills.min.js"></script>
     <script>
       var tabs = new Tabby("[data-tabs]");
       var manTabs = new Tabby("[man-tabs]");
+      var faqTabs = new Tabby("[faq-tabs]");
+      var foodTabs = new Tabby("[food-tabs]");
     </script>
+    <script src="js/main.js"></script>
   </body>
 </html>

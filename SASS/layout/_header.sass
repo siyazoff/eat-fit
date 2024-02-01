@@ -80,5 +80,148 @@
             color: #00B107
             font-weight: 500
             line-height: 16px
+    &__burger
+        display: none
+    .popup
+        display: none
 
-@media all and (max-width: 1180)
+@media all and (max-width: 1180px)
+    .header
+        position: fixed
+        top: 2px
+        border-radius: 150px
+
+        &__box
+            padding: 20px
+
+            nav
+                display: none
+
+            .halal-link
+                display: none
+
+        .logo
+            width: 52px
+            height: 52px
+            position: relative
+            z-index: 100
+            svg
+                width: 100%
+                height: 100%
+
+        &__connection
+            a
+                font-weight: 700
+                background-color: $-color-green-light
+                border-radius: 50px
+                display: flex
+                justify-content: center
+                align-items: center
+                padding: 10px
+
+                &.for-modal
+                    display: none
+
+        &__cart
+            display: none
+
+        &__burger
+            display: block
+            background: $-color-green-light
+            position: relative
+            z-index: 101
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            border-radius: 10px
+            gap: 6px
+            width: 45px
+            height: 45px
+            cursor: pointer
+            overflow: hidden
+            span
+                width: 25px 
+                height: 2px
+                border-radius: 10px
+                background: $color-white
+                display: block
+                transition: all .3s cubic-bezier(0.45, 1.8, 0.5, 0.75)
+            
+            &.active
+                span
+                    &:first-child
+                        transform: translateY(9px) rotate(45deg)
+                    &:nth-child(2n)
+                        transform: translateX(50px)
+                    &:last-child
+                        transform: translateY(-7px) rotate(-45deg)
+        .popup
+            display: block
+            height: 100vh
+            width: 100%
+            position: fixed
+            left: 100%
+            top: 0
+            transition: left .4s ease-in-out
+            background: $color-white
+            hr
+                opacity: 1
+                background: $-color-green-light
+                width: 100%
+                height: 1px
+            nav
+                display: flex
+                flex-direction: column
+                gap: 30px
+                a
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 20px
+                    color: #474040
+            &__bottom
+                display: flex
+                flex-direction: column
+                gap: 30px
+            &-cart
+                display: flex
+                a
+                    background-color: #8ADB24
+                    border-radius: 50px
+                    width: 40px
+                    height: 40px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    position: relative
+                    p
+                        position: absolute
+                        top: 50%
+                        left: 50px
+                        transform: translateY(-50%)
+                        font-weight: 400
+                        font-size: 16px
+                        line-height: 20px
+                        color: #474040
+
+
+                    span
+                        position: absolute
+                        top: -7px
+                        right: -3px
+                        color: #00B107
+                        font-weight: 500
+                        line-height: 16px
+            &-halal
+                display: flex
+                align-items: center
+                gap: 10px
+                img
+                    width: 40px
+                    height: 40px
+            &.active
+                left: 0
+
+
+
+                            
