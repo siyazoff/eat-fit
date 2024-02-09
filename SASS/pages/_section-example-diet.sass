@@ -1,7 +1,7 @@
 .section-example-diet
     display: block
     background: $color-white
-    padding: 60px 0
+    padding: 75px 0
 
     .title-heading
         position: relative
@@ -62,7 +62,7 @@
         .swiper-diet
             width: 100%
             height: 100%
-            overflow: hidden
+            overflow: visible
 
             .swiper-slide
                 height: 100%
@@ -75,21 +75,6 @@
                 border: 1px solid $color-green
                 position: relative
                 padding: 35px
-
-                span
-                    position: absolute
-                    top: 50px
-                    left: 50px
-                    display: block
-                    border-radius: 15px
-                    background: rgba(255, 255, 255, 0.15)
-                    backdrop-filter: blur(7.5px)
-                    width: fit-content
-                    padding: 15px
-                    color: $color-white
-                    font-size: 20px
-                    font-weight: 400
-                    line-height: 20px
 
                 img
                     height: 318px
@@ -105,7 +90,6 @@
                     line-height: 30px
                     color: #474040
                 p
-                    margin-bottom: 35px
                     color: #474040
                     font-size: 20px
                     line-height: 24px
@@ -124,3 +108,26 @@
                         color: $color-white
                         border: 1px solid $color-green
                         box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.3)
+
+    &__btns
+        display: flex
+        gap: 30px
+        margin-top: 50px
+        justify-content: end
+
+        [class^="swiper-diet-"]
+            cursor: pointer
+            &:first-child
+                transform: rotate(180deg)
+
+        svg
+            circle
+                transition: fill .3s ease-in-out
+            path
+                transition: fill .3s ease-in-out
+
+            &:hover
+                circle
+                    fill: $color-white
+                path
+                    fill: $color-green

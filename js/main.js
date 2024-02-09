@@ -26,9 +26,7 @@ $(document).ready(function () {
     var tabId = $(this).attr("href");
     $(
       `.woman_wrp .wrapper-weight > h3, 
-    .woman_wrp .wrapper-cost > h3, 
-    .woman_wrp .wrapper-info > p, 
-    .woman_wrp .wrapper-info > .calculation > h4`
+    .woman_wrp .wrapper-cost > h3`
     ).hide();
 
     $(tabId).show();
@@ -48,9 +46,7 @@ $(document).ready(function () {
     var tabId = $(this).attr("href");
     $(
       `.man__card .wrapper-weight > h3,
-    .man__card .wrapper-cost > h3,
-    .man__card .wrapper-info > p,
-    .man__card .wrapper-info > .calculation > h4`
+    .man__card .wrapper-cost > h3`
     ).hide();
 
     $(tabId).show();
@@ -62,6 +58,7 @@ $(document).ready(function () {
     $(tabId + "-carb").show();
   });
 
+  $(".tabby-man-link[data-tabby-default]").click();
   $(".tabby-man-link[data-tabby-default]").click();
 
   $('input[type="radio"][name="activity"]').on("change", function () {

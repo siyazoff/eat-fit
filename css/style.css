@@ -360,7 +360,7 @@ main {
     border-radius: 10px;
     background: #FFF;
     display: block;
-    transition: all 0.3s cubic-bezier(0.45, 1.8, 0.5, 0.75);
+    transition: all 0.3s;
   }
   .header__burger.active span:first-child {
     transform: translateY(9px) rotate(45deg);
@@ -677,13 +677,13 @@ main {
   }
 }
 .section-services {
-  padding: 119px 0 60px;
+  padding: 119px 0 90px;
   position: relative;
   background: #FFF;
 }
 .section-services__box {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 30px;
   height: 100%;
   width: 100%;
@@ -697,6 +697,7 @@ main {
   flex-direction: column;
   border: 1px solid #8ADB24;
   transition: all 0.3s ease-in-out;
+  grid-column: span 2;
 }
 .section-services__box .item:hover {
   transform: translateY(-10px);
@@ -714,13 +715,16 @@ main {
   font-size: 26px;
   font-weight: 700;
   line-height: 36px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 .section-services__box .item p {
   color: #474040;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+.section-services__box .item_big {
+  grid-column: span 3;
 }
 
 .section-steps {
@@ -771,7 +775,7 @@ main {
 }
 
 .section-call {
-  padding: 60px 0;
+  padding: 75px 0;
   background: #FFF;
 }
 .section-call__box {
@@ -875,7 +879,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 70px;
-  max-width: 570px;
+  max-width: 657px;
 }
 .section-programms .woman__card .left .icon {
   display: flex;
@@ -975,51 +979,26 @@ main {
   line-height: 20px;
   color: #FFF;
   text-transform: uppercase;
-}
-.section-programms .woman__card .wrapper-btns a:first-child {
   background: #74AB31;
+  width: 100%;
+  max-width: 459px;
+  text-align: center;
+  margin-top: 10px;
 }
 .section-programms .woman__card .right {
   width: 100%;
-  max-width: 680px;
-  padding-top: 70px;
+  max-width: 600px;
+  padding-top: 57px;
   display: flex;
   justify-content: space-between;
 }
 .section-programms .woman__card .right img {
   width: 100%;
-  height: 560px;
-  max-width: 454px;
+  height: 584px;
+  max-width: 475px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
-}
-.section-programms .woman__card .wrapper-info {
-  max-width: 187px;
-  width: 100%;
-  padding-top: 61px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.section-programms .woman__card .wrapper-info .calculation span {
-  color: #474040;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  margin-bottom: 25px;
-  display: inline-block;
-}
-.section-programms .woman__card .wrapper-info .calculation h4 {
-  color: #474040;
-  font-size: 30px;
-  line-height: 25px;
-  font-weight: 600;
-  margin-bottom: 35px;
-}
-.section-programms .woman__card .wrapper-info .calculation h4.last-calc {
-  margin-bottom: 0;
 }
 .section-programms .man__card {
   background: #1D2029;
@@ -1037,20 +1016,11 @@ main {
 .section-programms .man__card .wrapper-weight h3 {
   color: #FFF;
 }
-.section-programms .man__card .wrapper-info p {
-  color: #FFF;
-}
-.section-programms .man__card .wrapper-info .calculation span {
-  color: #FFF;
-}
-.section-programms .man__card .wrapper-info .calculation h4 {
-  color: #FFF;
-}
 
 .section-example-diet {
   display: block;
   background: #FFF;
-  padding: 60px 0;
+  padding: 75px 0;
 }
 .section-example-diet .title-heading {
   position: relative;
@@ -1117,7 +1087,7 @@ main {
 .section-example-diet__box .swiper-diet {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: visible;
 }
 .section-example-diet__box .swiper-diet .swiper-slide {
   height: 100%;
@@ -1129,23 +1099,6 @@ main {
   border: 1px solid #74AB31;
   position: relative;
   padding: 35px;
-}
-.section-example-diet__box .swiper-diet .item span {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  display: block;
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(7.5px);
-          backdrop-filter: blur(7.5px);
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 15px;
-  color: #FFF;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 20px;
 }
 .section-example-diet__box .swiper-diet .item img {
   height: 318px;
@@ -1163,7 +1116,6 @@ main {
   color: #474040;
 }
 .section-example-diet__box .swiper-diet .item p {
-  margin-bottom: 35px;
   color: #474040;
   font-size: 20px;
   line-height: 24px;
@@ -1182,6 +1134,30 @@ main {
   color: #FFF;
   border: 1px solid #74AB31;
   box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.3);
+}
+.section-example-diet__btns {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  justify-content: end;
+}
+.section-example-diet__btns [class^=swiper-diet-] {
+  cursor: pointer;
+}
+.section-example-diet__btns [class^=swiper-diet-]:first-child {
+  transform: rotate(180deg);
+}
+.section-example-diet__btns svg circle {
+  transition: fill 0.3s ease-in-out;
+}
+.section-example-diet__btns svg path {
+  transition: fill 0.3s ease-in-out;
+}
+.section-example-diet__btns svg:hover circle {
+  fill: #FFF;
+}
+.section-example-diet__btns svg:hover path {
+  fill: #74AB31;
 }
 
 .section-form {
@@ -1322,7 +1298,7 @@ main {
 }
 
 .section-trust {
-  padding: 60px 0;
+  padding: 75px 0;
   background: #FFF;
 }
 .section-trust__box {
@@ -1331,7 +1307,7 @@ main {
 .section-trust__box .swiper-trust {
   height: 451px;
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
 }
 .section-trust__box .swiper-trust .swiper-slide {
   height: 100%;
@@ -1392,7 +1368,7 @@ main {
 }
 
 .section-faq {
-  padding: 60px 0;
+  padding: 75px 0;
   background: #FFF;
   position: relative;
 }
@@ -1454,6 +1430,9 @@ main {
   max-width: 1170px;
   display: none;
 }
+.section-faq__box .wrapper-faq-tabs .faq p a {
+  color: #74AB31;
+}
 .section-faq__box .wrapper-faq-tabs .faq svg {
   position: absolute;
   top: 40px;
@@ -1490,18 +1469,17 @@ main {
 }
 .section-about__box {
   display: flex;
-  gap: 70px;
+  gap: 78px;
   margin-top: 50px;
+  align-items: center;
 }
 .section-about__box .left {
-  max-width: 434px;
   height: 100%;
   width: 100%;
-  margin-left: 95px;
 }
 .section-about__box .left img {
   width: 100%;
-  height: 548px;
+  height: auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1510,11 +1488,9 @@ main {
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   height: 100%;
-  max-width: 675px;
-  margin-top: 77px;
-  row-gap: 72px;
-  -moz-column-gap: 100px;
-       column-gap: 100px;
+  row-gap: 40px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 .section-about__box .right .item {
   display: flex;
@@ -1522,14 +1498,14 @@ main {
   gap: 25px;
 }
 .section-about__box .right .item h2 {
-  line-height: 50px;
+  line-height: 40px;
   font-size: 50px;
   font-weight: 700;
   color: #F4C61F;
 }
 .section-about__box .right .item h3 {
   font-size: 26px;
-  line-height: 26px;
+  line-height: 16px;
   font-weight: 600;
   color: #474040;
 }
@@ -1540,38 +1516,116 @@ main {
   font-weight: 400;
 }
 
-.section-advantages {
+.section-kitchen-tour {
   position: relative;
-  padding: 60px 0;
+  padding: 75px 0;
   background: #FFF;
 }
-.section-advantages__box {
+.section-kitchen-tour__box {
   margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  gap: 30px;
+}
+.section-kitchen-tour__box .left {
+  max-width: 804px;
+}
+.section-kitchen-tour__box .left img {
   width: 100%;
   height: 100%;
-  gap: 26px;
-}
-.section-advantages__box .item {
-  border: 1px solid #74AB31;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
-  padding: 20px;
+}
+.section-kitchen-tour__box .right {
+  max-width: 566px;
+}
+.section-kitchen-tour__box .right p {
+  color: #474040;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 70px;
+}
+.section-kitchen-tour__box .right h3 {
+  color: #474040;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.section-kitchen-tour__box .right h4 {
+  color: #474040;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.section-kitchen-tour__box .right .kitch-tour-form__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #F8FFF4;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-.section-advantages__box .item img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
+.section-kitchen-tour__box .right .time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
 }
-.section-advantages__box .item h3 {
-  font-size: 26px;
-  line-height: 36px;
+.section-kitchen-tour__box .right .time input {
+  border-radius: 20px;
+  border: 1px solid #474040;
+  padding: 16px 40px 16px 25px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   color: #474040;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 20px;
+  appearance: none;
+  margin: 0;
+}
+.section-kitchen-tour__box .right .time input[type=time]::-webkit-calendar-picker-indicator, .section-kitchen-tour__box .right .time input[type=date]::-webkit-calendar-picker-indicator, .section-kitchen-tour__box .right .time input[type=date]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+          appearance: none;
+}
+.section-kitchen-tour__box .right .time input[type=time], .section-kitchen-tour__box .right .time input[type=date] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill='none'%3E%3Cpath d='M12.5 17.1875C12.3974 17.1877 12.2958 17.1675 12.201 17.1282C12.1062 17.0889 12.0202 17.0313 11.9477 16.9586L4.13521 9.14614C3.82993 8.84087 3.82993 8.34653 4.13521 8.04146C4.44048 7.73638 4.93481 7.73618 5.23989 8.04146L12.5 15.3016L19.7602 8.04146C20.0655 7.73618 20.5598 7.73618 20.8649 8.04146C21.17 8.34673 21.1702 8.84106 20.8649 9.14614L13.0524 16.9586C12.9799 17.0313 12.8938 17.0889 12.7991 17.1282C12.7043 17.1675 12.6027 17.1877 12.5 17.1875Z' fill='%23474040'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 94% 50%;
+}
+.section-kitchen-tour__box .right input {
+  background: transparent;
+  padding: 20px 30px;
+  border-radius: 95px;
+  border: 1px solid #474040;
+  margin-top: 25px;
+  color: #474040;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 32px;
+}
+.section-kitchen-tour__box .right input[type=tel] {
+  margin-top: 15px;
+}
+.section-kitchen-tour__box .right button[type=submit] {
+  padding: 25px 55px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 20px;
+  color: #FFF;
+  text-transform: uppercase;
+  background: #74AB31;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 95px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
 }
 
 .section-contacts {

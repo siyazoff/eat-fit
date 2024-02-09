@@ -17,6 +17,10 @@ const dietSwiper = new Swiper(".swiper-diet", {
       spaceBetween: 30,
     },
   },
+  navigation: {
+    prevEl: ".swiper-diet-prev",
+    nextEl: ".swiper-diet-next",
+  },
 });
 
 const trustSwiper = new Swiper(".swiper-trust", {
