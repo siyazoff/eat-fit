@@ -48,6 +48,9 @@
         .left
             padding: 106px 0 50px 50px
 
+            .mobile-img
+                display: none
+
 
             h1
                 display: flex
@@ -91,91 +94,60 @@
 
 @media all and (max-width: 768px)
     .section-home
-        padding: 169px 0 107px
-        position: relative
-        .cont
-            position: relative
+        padding: 97px 0 40px
 
         .swiper-home
-            width: 100%
-            height: 100%
-            overflow: hidden
-            border-radius: 40px
+            border-radius: 30px
         
         .swiper-home-btns
-            display: flex
-            gap: 30px
-            position: absolute
-            bottom: -90px
-            right: 10px
-            z-index: 100
-            .swiper-home-prev,.swiper-home-next
-                cursor: pointer
-                svg
-                    transform: rotate(180deg)
-
-                    circle
-                        transition: all .3s ease-in-out
-                        fill: transparent
-                        stroke: $color-white
-                    path
-                        transition: all .3s ease-in-out
-                        fill: $color-white
-                &:hover
-                    circle
-                        fill: $color-white
-                    path
-                        fill: $-color-green-light
-            .swiper-home-next
-                svg
-                    transform: rotate(0)
+            display: none
 
 
         &__box
-            background-color: #FAFAFA
-            border-radius: 40px
-            display: flex
-            justify-content: space-between
+            border-radius: 30px
+            flex-direction: column
+            padding: 40px 19px
 
             .left
-                padding: 106px 0 50px 50px
+                padding: 0
+
+                .mobile-img
+                    display: block
 
 
                 h1
-                    display: flex
-                    flex-direction: column
-                    gap: 23.7px
-                    color: #74AB31
-                    font-size: 64px
-                    font-style: normal
-                    font-weight: 400
-                    line-height: 69px
-                    text-transform: uppercase
-                    max-width: 655px
-                    margin-bottom: 60px
-                    user-select: none
+                    gap: 22px
+                    font-size: 36px
+                    line-height: 36px
+                    max-width: 100%
+                    margin-bottom: 40px
 
                 .facts
-                    display: flex
-                    gap: 47px
-                    margin-bottom: 77px
+                    width: 100%
+                    gap: 0
+                    justify-content: space-between
+                    margin-bottom: 40px
+                    margin-top: 20px
 
                     .item
-                        display: flex
-                        gap: 25px
-                        width: 100%
+                        gap: 10px
+                        width: fit-content
+
+                        img
+                            width: 28px
+                            height: 28px
 
                         span
-                            color: $-color-green-darker
-                            font-size: 20px
-                            font-style: normal
-                            font-weight: 500
-                            line-height: 20px
+                            font-size: 14px
+                            line-height: 14px
 
             .right
-                padding: 31px 6px 
-                img
-                    width: 100%
-                    height: 100%
-                    max-width: 651px
-                    object-fit: contain
+                display: none
+
+
+@media all and (max-width: 400px)
+    .section-home__box .left .facts
+        flex-wrap: wrap
+        column-gap: 30px
+        row-gap: 10px
+        justify-content: space-around
