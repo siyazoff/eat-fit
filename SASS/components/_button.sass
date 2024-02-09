@@ -56,4 +56,30 @@
 
         
 
-    
+@media all and ( max-width: 768px )
+    .button
+        &__big
+            &:link, &:visited
+                padding: 28px 5px
+                font-size: 18px
+                line-height: 18px
+                width: 100%
+                text-align: center
+
+        &__submit
+            position: relative
+            background-color: $color-yellow
+            padding: 15px
+            font-size: 14px
+            line-height: 14px
+
+
+@media all and ( max-width: 330px )
+    .button
+        &__big
+            &:link, &:visited
+                padding: 28px 5px
+                font-size: 14px
+                line-height: 14px
+                width: 100%
+                text-align: center

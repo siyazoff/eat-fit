@@ -44,3 +44,31 @@
                     font-size: 16px
                     line-height: 24px
                     font-weight: 400
+
+
+@media all and ( max-width: 768px )
+    .section-about
+        padding: 40px 0
+
+        &__box
+            gap: 40px
+            margin-top: 40px
+            flex-direction: column
+
+            .right
+                display: grid
+                grid-template-columns: repeat(1, 1fr)
+                row-gap: 35px
+
+                .item
+                    gap: 15px
+                    h2
+                        line-height: 30px
+                        font-size: 30px
+                    h3
+                        font-size: 18px
+                        line-height: 20px
+                    p
+                        font-size: 14px
+                        line-height: 20px
+    

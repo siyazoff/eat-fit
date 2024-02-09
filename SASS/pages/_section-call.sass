@@ -74,3 +74,53 @@
                 width: 100%
                 height: 823px
                 object-fit: contain
+
+
+@media all and ( max-width: 768px )
+    .section-call
+        padding: 40px 0
+        background: $color-white
+
+        &__box
+            border-radius: 20px
+            padding: 30px
+
+            .left
+                max-width: 100%
+                margin: 0
+
+                h2
+                    font-size: 26px
+                    line-height: 32px
+                    margin-bottom: 30px
+
+                form
+                    display: flex
+                    flex-direction: column
+                    gap: 20px
+
+                    input
+                        border-radius: 25px
+                        padding: 16px
+                        font-size: 16px
+                        line-height: 16px
+                    p
+                        font-size: 12px
+                        line-height: 16px
+                        margin-top: 0
+
+                    button
+                        font-size: 26px
+                        line-height: 32px
+                        gap: 12px
+                        margin-top: 0
+                        transition: gap .5s ease-in-out
+                        width: fit-content
+                        &:hover
+                            gap: 20px
+                        svg
+                            width: 50px
+                            height: 50px
+
+            .right
+                display: none

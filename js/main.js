@@ -12,8 +12,10 @@ $(document).ready(function () {
     $header.css(
       "top",
       prevScrollPos > currentScrollPos || currentScrollPos === 0
-        ? "31px"
-        : "-205px"
+        ? window.innerWidth <= 768
+          ? "3px"
+          : "31px"
+        : "-105px"
     );
     $header.removeClass("active");
     $(".burger").removeClass("active");

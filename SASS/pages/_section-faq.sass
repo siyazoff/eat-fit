@@ -85,3 +85,56 @@
                             stroke: $color-green
                         path
                             fill: $color-white
+
+
+
+@media all and ( max-width: 768px )
+    .section-faq
+        padding: 40px 0
+
+        &__box
+            margin-top: 40px
+
+            ul
+                gap: 6px
+
+                a
+                    border-radius: 20px
+                    font-size: 14px
+                    line-height: 9px
+                    padding: 12px 20px
+
+            .wrapper-faq-tabs
+
+                .faq
+                    border-radius: 10px
+                    padding: 20px 
+                    margin-bottom: 20px
+                    &:not(:last-child)
+                        margin-bottom: 10px
+                    h2
+                        font-size: 18px
+                        line-height: 24px
+                        max-width: 80%
+
+                    p
+                        font-size: 14px
+                        line-height: 20px
+                        max-width: 100%
+                                
+                    svg
+                        width: 50px
+                        height: 50px
+                        top: 20px
+                        right: 20px
+                        transform: rotate(90deg)
+                        cursor: pointer
+                        transition: all .3s ease-in-out
+                        circle
+                            fill: $color-white
+                            stroke: #474040
+                        path
+                            fill: #474040
+                    &.active
+                        h2
+                            margin-bottom: 30px

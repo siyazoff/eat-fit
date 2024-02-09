@@ -36,11 +36,8 @@ const trustSwiper = new Swiper(".swiper-trust", {
 
   breakpoints: {
     320: {
-      slidesPerView: 1,
-      spaceBetween: 8,
-    },
-    500: {
       slidesPerView: 2,
+      spaceBetween: 8,
     },
     768: {
       slidesPerView: 4,

@@ -66,3 +66,36 @@
                             stroke: $color-green
                         path
                             fill: $color-white
+
+
+@media all and ( max-width: 768px )
+    .section-trust
+        padding: 40px 0
+
+        &__box
+            margin-top: 40px
+
+            .swiper-trust
+                height: 271px
+
+
+            .swiper-trust-btns
+                gap: 20px
+                margin-top: 40px
+
+                .swiper-trust-prev
+                    transform: rotate(180deg)
+                    margin-left: auto
+
+                .swiper-trust-prev
+                    cursor: pointer
+                    svg
+                        width: 50px
+                        height: 50px
+                .swiper-trust-next
+                    cursor: pointer
+                    svg
+                        width: 50px
+                        height: 50px
+
+    

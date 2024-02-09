@@ -12,6 +12,8 @@
         height: 100%
         margin-top: 50px
         position: relative
+        .line-mobile
+            display: none
 
         hr
             position: absolute
@@ -46,3 +48,35 @@
 
 
 
+@media all and ( max-width: 768px )
+    .section-steps
+        padding: 40px 0
+
+        &__box
+            display: grid
+            grid-template-columns: repeat(1, 1fr)
+            gap: 80px
+            margin-top: 40px
+
+            .line-mobile
+                position: absolute
+                left: 49.8%
+                top: 9%
+                z-index: 0
+                display: block
+
+            hr
+                display: none
+
+            .item
+                flex-direction: column-reverse
+                gap: 20px
+                max-width: 260px
+                text-align: center
+                align-items: center
+                margin-inline: auto
+                position: relative
+
+                p
+                    font-size: 18px
+                    line-height: 22px
