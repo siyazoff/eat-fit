@@ -1,22 +1,36 @@
 $(document).ready(function () {
-  $(".burger").on("click", function () {
-    $(".burger").toggleClass("active");
-    $("#header").toggleClass("active");
+  const links = document.querySelectorAll(".header .popup nav a");
+
+  links.forEach((link) => {
+    link.addEventListener("click", closeOnClick);
+  });
+
+  function closeOnClick() {
+    $(".header__burger").toggleClass("active");
+    $(".popup").toggleClass("active");
+  }
+
+  $(".header__burger").click(function () {
+    $(this).toggleClass("active");
+    $(".popup").toggleClass("active");
   });
 
   let prevScrollPos = window.scrollY;
   const $header = $("#header");
+  const $headerBox = $(".header__box");
 
   $(window).on("scroll", function () {
     const currentScrollPos = window.scrollY;
-    $header.css(
-      "top",
-      prevScrollPos > currentScrollPos || currentScrollPos === 0
-        ? window.innerWidth <= 768
-          ? "3px"
-          : "31px"
-        : "-105px"
-    );
+    const isMobile = window.innerWidth <= 768;
+
+    if (currentScrollPos === 0) {
+      $header.css("top", isMobile ? "3px" : "31px");
+      $header.css("background", "transparent");
+    } else {
+      $header.css("top", prevScrollPos > currentScrollPos ? "0" : "-150px");
+      $header.css("background", "white");
+    }
+
     $header.removeClass("active");
     $(".burger").removeClass("active");
     prevScrollPos = currentScrollPos;
@@ -95,9 +109,27 @@ $(document).ready(function () {
   $(".country-change").click(function () {
     $("[food-tabs]").slideToggle();
   });
-  $(".header__burger").click(function () {
-    $(this).toggleClass("active");
-    $(".popup").toggleClass("active");
-    $("body").toggleClass("noscroll");
+
+  function showModal() {
+    $(".modal").css("display", "flex");
+  }
+
+  function hideModal() {
+    $(".modal").css("display", "none");
+  }
+
+  setTimeout(function () {
+    showModal();
+  }, 15000);
+
+  $(".modal__button_open").click();
+  $(".modal__close").click(hideModal);
+
+  $(window).click(function (event) {
+    if ($(event.target).is(".modal")) {
+      hideModal();
+    }
   });
+
+  $("input[type=tel]").mask("+7 (999) 999-9999");
 });

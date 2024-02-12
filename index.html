@@ -11,7 +11,31 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="src/fonts/Gilroy/stylesheet.css" />
     <link rel="stylesheet" href="css/style.css" />
-
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="src/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="src/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="src/icons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="src/icons/safari-pinned-tab.svg"
+      color="#74ab31"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- cdn  -->
     <link
       rel="stylesheet"
@@ -46,14 +70,14 @@
           </svg>
         </a>
         <nav>
-          <a href="\">О нас</a>
-          <a href="\">Программы</a>
-          <a href="\">Пример меню</a>
-          <a href="\">EatFitGoс</a>
+          <a href="#section-abouts">О нас</a>
+          <a href="#section-programms">Программы</a>
+          <a href="#section-example-diet">Пример меню</a>
+          <a href="\">EatFitGo</a>
           <a href="\">Детокс</a>
-          <a href="\">Отзывы</a>
-          <a href="\">Частые вопросы</a>
-          <a href="\">Контакты</a>
+          <a href="#section-trust">Отзывы</a>
+          <a href="#section-faq">Частые вопросы</a>
+          <a href="#contacts">Контакты</a>
         </nav>
         <a class="halal-link" href="\">
           <img class="halal" src="src/img/halal.webp" alt="halal" />
@@ -121,14 +145,14 @@
       </div>
       <div class="popup">
         <nav>
-          <a href="\">О нас</a>
-          <a href="\">Программы</a>
-          <a href="\">Пример меню</a>
+          <a href="#section-abouts">О нас</a>
+          <a href="#section-programms">Программы</a>
+          <a href="#section-example-diet">Пример меню</a>
           <a href="\">EatFitGo</a>
           <a href="\">Детокс</a>
-          <a href="\">Отзывы</a>
-          <a href="\">Частые вопросы</a>
-          <a href="\">Контакты</a>
+          <a href="#section-trust">Отзывы</a>
+          <a href="#section-faq">Частые вопросы</a>
+          <a href="#contacts">Контакты</a>
         </nav>
         <hr />
         <div class="popup__bottom">
@@ -955,7 +979,12 @@
                 <span> в ближайшее время </span>
               </h2>
               <form>
-                <input type="text" placeholder="Город" />
+                <select name="city" id="city">
+                  <optgroup label="Выберите город">
+                    <option value="Astana">Астана</option>
+                    <option value="Almaty">Алматы</option>
+                  </optgroup>
+                </select>
                 <input type="text" placeholder="Ваше имя" />
                 <input type="tel" placeholder="Ваш телефон" />
                 <input type="tel" placeholder="Промокод (если есть)" />
@@ -1007,7 +1036,7 @@
         </div>
       </section>
 
-      <section class="section-trust">
+      <section class="section-trust" id="section-trust">
         <div class="cont">
           <div class="title-heading">Нам доверяют заботу о своём питании</div>
           <div class="section-trust__box">
@@ -1606,9 +1635,14 @@
                     <h4>С</h4>
                     <input type="time" value="15:00" />
                     <h4>До</h4>
-                    <input type="time" value="16:00" />
+                    <input type="time" value="18:00" />
                   </div>
-                  <input type="text" placeholder="Город" />
+                  <select name="city" id="city">
+                    <optgroup label="Выберите город">
+                      <option value="Astana">Астана</option>
+                      <option value="Almaty">Алматы</option>
+                    </optgroup>
+                  </select>
                   <input type="tel" placeholder="Телефон" />
                 </div>
                 <button type="submit" class="button">отправить</button>
@@ -1668,6 +1702,76 @@
         >Сделано в FACTUM</a
       >
     </footer>
+
+    <div class="modal">
+      <div class="modal__body">
+        <div class="modal__box">
+          <div class="modal__close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              viewBox="0 0 35 35"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_118_1357)">
+                <path
+                  d="M34.4531 2.65609C34.4531 2.09005 34.2328 1.55767 33.8323 1.15779C33.0314 0.356907 31.6366 0.356907 30.8357 1.15779L17.5 14.4935L4.16431 1.15779C3.36342 0.356907 1.9686 0.356907 1.16771 1.15779C0.767309 1.55767 0.546875 2.09006 0.546875 2.65609C0.546875 3.22206 0.767309 3.75444 1.16772 4.15439L14.5034 17.4901L1.16772 30.8258C0.767309 31.2256 0.546875 31.758 0.546875 32.3241C0.546875 32.89 0.767309 33.4224 1.16772 33.8224C1.96861 34.6232 3.36343 34.6232 4.16432 33.8224L17.5 20.4867L30.8357 33.8224C31.2362 34.2228 31.768 34.4432 32.334 34.4432C32.9 34.4432 33.4319 34.2228 33.8323 33.8224C34.2328 33.4224 34.4531 32.89 34.4531 32.3241C34.4531 31.758 34.2328 31.2256 33.8323 30.8258L20.4966 17.4901L33.8323 4.1544C34.2328 3.75446 34.4531 3.22206 34.4531 2.65609Z"
+                  fill="#474040"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_118_1357">
+                  <rect width="35" height="35" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="modal__left">
+            <div class="modal__logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="68"
+                height="68"
+                viewBox="0 0 68 68"
+                fill="none"
+              >
+                <circle cx="34" cy="34" r="34" fill="#74AB31"></circle>
+                <path
+                  d="M16.0859 55.5698H27.855L33.0334 26.3897H48.5577L50.4515 14.6235H23.1474L16.0859 55.5698Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M31.6211 55.5698H43.8609L45.8305 43.333H33.8067L31.6211 55.5698Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M48.1031 29.2136H36.3287L34.3952 40.0384H46.3608L48.1031 29.2136Z"
+                  fill="white"
+                ></path>
+              </svg>
+              <span> EAT&FIT </span>
+            </div>
+            <div class="modal__desc">
+              <h2>акция</h2>
+              <p>
+                Попробуй 2 пробных <br />
+                дня питания
+              </p>
+              <p class="sale_p">Со скидкой</p>
+              <h3>за 9900 тг</h3>
+            </div>
+            <form class="modal__form">
+              <input type="tel" placeholder="телефон" />
+              <button type="submit">Заказать</button>
+            </form>
+          </div>
+          <div class="modal__right">
+            <img src="src/img/modal-img.webp" alt="eat-and-fit" />
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>

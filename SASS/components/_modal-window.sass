@@ -1,0 +1,207 @@
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    background: rgba(71, 64, 64, 0.50)
+    z-index: 1000
+    width: 100%
+    height: 100%
+    padding: 16px
+    display: none
+
+    &__body
+        margin: auto
+        position: relative
+        overflow: hidden
+        width: 100%
+        max-width: 1182px
+        border-radius:55px
+        background: $color-white
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25)
+
+    &__box
+        display: flex
+
+    &__left
+        padding: 70px
+        width: 100%
+        max-width: 534px
+
+    &__logo
+        display: flex
+        gap: 10px
+        align-items: center
+
+        svg
+            height: 85px
+            width: 85px
+
+        span
+            color: #474040
+            font-size: 40px
+            font-weight: 500
+            line-height: 36px
+
+    &__desc
+        display: flex
+        flex-direction: column
+        margin-top: 40px
+
+        h2
+            color: #474040
+            font-size: 70px
+            font-weight: 900
+            line-height: 70px
+            text-transform: uppercase
+
+        p
+            color: #474040
+            font-size: 24px
+            font-weight: 500
+            line-height: 120%
+            margin-top: 30px
+
+            &.sale_p
+                margin-top: 17px
+                line-height: 120%
+
+        h3
+            color: #74AB31
+            font-size: 36px
+            font-weight: 800
+            line-height: 36px
+            text-transform: uppercase
+            margin-top: 30px
+
+
+    &__form
+        margin-top: 30px
+        display: flex
+        flex-direction: column
+        gap: 20px
+
+        input
+            background: transparent
+            border-radius: 95px
+            border: 1px solid #474040
+            padding: 15px 25px
+            font-size: 18px
+            line-height: 120%
+            text-transform: uppercase
+
+        button
+            background: #74AB31
+            border-radius: 95px
+            padding: 15px 25px
+            font-size: 18px
+            line-height: 120%
+            font-weight: 800
+            color: $color-white
+            text-transform: uppercase
+
+    &__close
+        position: absolute
+        right: 40px
+        top: 40px
+        cursor: pointer
+
+        &:hover
+            path
+                opacity: .5
+
+
+
+
+
+    &__right
+        width: 100%
+        height: 700px
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+
+@media all and ( max-width: 768px )
+    .modal
+        position: fixed
+        top: 0
+        left: 0
+        background: rgba(71, 64, 64, 0.50)
+        z-index: 1000
+        width: 100%
+        height: 100%
+        padding: 16px
+        display: none
+
+        &__body
+            border-radius: 20px
+            max-width: fit-content
+
+        &__left
+            padding: 15px
+            max-width: 203px
+
+        &__logo
+            svg
+                height: 40px
+                width: 40px
+
+            span
+                display: none
+                
+        &__desc
+            display: flex
+            flex-direction: column
+            margin-top: 40px
+
+            h2
+                font-size: 35px
+                line-height: 35px
+
+            p
+                font-size: 16px
+                margin-top: 30px
+
+                &.sale_p
+                    margin-top: 10px
+                    line-height: 120%
+
+            h3
+                font-size: 26px
+                line-height: 26px
+
+
+        &__form
+            margin-top: 30px
+            gap: 6pp
+
+        &__close
+            position: absolute
+            right: 20px
+            top: 20px
+            cursor: pointer
+
+            svg
+                width: 20px
+                height: 20px
+
+            &:hover
+                path
+                    opacity: .5
+
+
+
+
+
+        &__right
+            width: 100%
+            height: 460px
+            max-width: 200px
+
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+    

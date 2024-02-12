@@ -3,19 +3,23 @@
     top: 31px
     left: 50%
     transform: translateX(-50%)
-    width: 100%
-    max-width: 1400px
-    margin-inline: auto
-    background-color: $color-white
-    border-radius: 500px
     transition: all .3s ease-in-out
     z-index: 999
+    width: 100%
+
+    
 
     &__box
         display: flex
         justify-content: space-between
         align-items: center
         padding: 20px
+        width: 100%
+        max-width: 1400px
+        margin-inline: auto
+        background-color: $color-white
+        border-radius: 500px
+        
 
         nav
             display: flex
@@ -50,11 +54,14 @@
             justify-content: center
             align-items: center
             padding: 10px
+            color: $color-white
           
 
             &.for-modal
                 width: 40px
                 height: 40px
+
+            &:hover
                
 
 
@@ -89,16 +96,20 @@
     .header
         position: fixed
         top: 3px
-        border-radius: 150px
+        padding-inline: 10px
 
         &__box
             padding: 12px
+            border-radius: 150px
+
 
             nav
                 display: none
 
             .halal-link
                 display: none
+
+        
 
         .logo
             width: 52px
@@ -118,6 +129,8 @@
                 justify-content: center
                 align-items: center
                 padding: 6px 10px
+                position: relative
+                z-index: 101
 
                 &.for-modal
                     display: none
@@ -162,12 +175,12 @@
             width: 100%
             position: fixed
             left: 0
-            top: -110vh
-            transition: top .4s ease-in-out, opacity .6s ease-in-out
+            top: -100vh
+            transition: top .3s ease, opacity .2s ease
             background: $color-white
             opacity: 0
             padding: 115px 0 30px 16px
-            overflow-y: scroll
+            overflow: hidden
             hr
                 opacity: 1
                 background: $-color-green-light
@@ -225,8 +238,10 @@
                     width: 40px
                     height: 40px
             &.active
-                top: 0
+                top: -3px
                 opacity: 1
+                overflow-y: scroll
+
 
 
 

@@ -1,0 +1,208 @@
+.section-detox-home
+    position: relative
+    background-color: #FFBB09
+
+
+    .cont
+        background-color: #FFBB09
+
+
+    &__bg
+        position: absolute
+        top: 0
+        left: 0
+        max-width: 50%
+        height: 100%
+        object-fit: cover
+        width: 100%
+
+    &__box
+        display: flex
+        .left_wrapper
+            width: 50%
+        .right_wrapper
+            padding: 288px 0 245px 70px
+
+            h1
+                color: $color-white
+                font-size: 64px
+                font-weight: 700
+                line-height: 69px
+                text-transform: uppercase
+
+            p
+                color: $color-white
+                font-size: 32px
+                font-weight: 500
+                line-height: 36px
+                display: flex
+                flex-direction: column
+                gap: 26px
+                margin-top: 60px
+
+
+
+.section-detox
+    padding: 120px 0 140px
+    position: relative
+    background-color: $color-white
+
+    &__heading
+        display: flex
+        gap: 57px
+        align-items: center
+
+        h2
+            color: #74AB31
+            font-size: 40px
+            font-weight: 400
+            line-height: 59px
+            text-transform: uppercase
+
+        p
+            max-width: 834px
+            padding: 30px
+            border-radius: 10px
+            background-color: #F8FAF7
+            color: #474040
+            font-size: 24px
+            font-weight: 400
+            line-height: 32px
+
+    &__box
+        display: flex
+        gap: 30px
+        margin-top: 70px
+
+.detox-item
+    display: flex
+    flex-direction: column
+
+    img
+        width: 100%
+        height: 487px
+        object-fit: cover
+        border-radius: 25px
+
+    h3
+        color: #474040
+        font-size: 30px
+        font-weight: 600
+        line-height: 36px
+        margin-top: 25px
+        margin-bottom: 50px
+        br
+            display: none
+    &__btns
+        display: flex
+        gap: 15px
+
+    &__btn
+        padding: 20px 30px
+        border-radius: 25px
+        color: $color-white
+        font-size: 20px
+        font-weight: 500
+        line-height: 15px
+        text-transform: uppercase
+        background-color: $color-green
+        transition: transform .3s ease-in-out
+
+        &:hover
+            transform: scale(1.05)
+            color: $color-white
+
+        &_yellow
+            background-color: #F4C61F
+            
+
+
+@media all and (max-width: 768px)
+    .section-detox-home
+        position: relative
+
+        &__bg
+            width: 100%
+            max-width: 100%
+            height: 361px
+            object-fit: cover
+
+        &__box
+            display: flex
+            flex-direction: column
+            .left_wrapper
+                width: 100%
+            .right_wrapper
+                padding: 390px 0 40px
+                text-align: center
+
+                h1
+                    font-size: 30px
+                    line-height: 30px
+
+                p
+                    font-size: 18px
+                    line-height: 22px
+                    gap: 15px
+                    margin-top: 20px
+
+
+    .section-detox
+        padding: 80px 0
+
+        &__heading
+            gap: 40px
+            align-items: center
+            flex-direction: column
+            text-align: center
+
+            h2
+                font-size: 30px
+                line-height: 40px
+
+            p
+                padding: 20px
+                font-size: 14px
+                font-weight: 400
+                line-height: 20px
+
+        &__box
+            gap: 12px
+            margin-top: 40px
+            justify-content: center
+
+    .detox-item
+        img
+            height: 162px
+            border-radius: 10px
+
+        h3
+            color: #474040
+            font-size: 16px
+            font-weight: 600
+            line-height: 22px
+            margin-top: 20px
+            margin-bottom: 20px
+
+            br
+                display: block
+
+        &__btns
+            display: flex
+            flex-direction: column
+            gap: 6px
+
+        &__btn
+            padding: 10px
+            text-align: center
+            border-radius: 95px
+            font-size: 12px
+            line-height: 12px
+
+@media all and (max-width: 400px)
+    .section-detox__box
+        flex-direction: column
+    .detox-item img
+        height: 360px
+    .detox-item h3 br
+        display: none
